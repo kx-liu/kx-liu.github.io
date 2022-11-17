@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+This blog records my study of Statistics and Data Science, covering but not limited to Probability Theory, Statistical Inference, Data Structure and Algorithms, Data Mining, Statistical Learning, Deep Learning...
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Feel free to contact me at Liu_K_X@outlook.com
