@@ -75,24 +75,7 @@
     }
   ],
   "education": [],
-  "awards": [
-    {
-      "title": "LSE PhD Studentship",
-      "date": "2024-09",
-      "awarder": "London School of Economics and Political Science"
-    },
-    {
-      "title": "Outstanding Graduate",
-      "date": "2023-06",
-      "awarder": "Beihang University"
-    }, 
-    {
-      "title": "Academic Merit Scholarship", 
-      "date": "2019-09",
-      "awarder": "School of Economics and Management, Beihang University", 
-      "summary": "Awarded to students with Top 30% acadamic performance."
-    }
-  ],
+  "awards": [],
   "certificates": [
     {
       "name": "Machine Learning",
