@@ -62,124 +62,105 @@
       ]
     }
   ],
-  "volunteer": [
+  "volunteer": [],
+  "education": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "institution": "London School of Economics and Political Science (LSE)",
+      "location": "London, UK",
+      "url": "https://www.lse.ac.uk/",
+      "area": "Statistics",
+      "studyType": "Ph.D.",
+      "startDate": "2024-09-25",
+      "endDate": "2029-09-30",
+      "courses": [
+        "Probability and Mathematical Statistics I (Mainly focused on Measure Theory)", 
+        "Statistical Modelling and Data Analysis", 
+        "Foundations of Machine Learning"
+      ]
+    }, 
+    {
+      "institution": "London School of Economics and Political Science (LSE)",
+      "score": "Distinction",
+      "location": "London, UK",
+      "url": "https://www.lse.ac.uk/",
+      "area": "Statistics (Financial Statistics)",
+      "studyType": "Master of Science",
+      "startDate": "2023-09-25",
+      "endDate": "2024-07-02",
+      "courses": [
+        "Time Series", 
+        "Reinforcement Learnings", 
+        "Financial Statistics"
+      ]
+    }, 
+    {
+      "institution": "Beihang University (BUAA)",
+      "location": "Beijing, China",
+      "url": "https://ev.buaa.edu.cn/",
+      "area": "Economic Statistics (Major) & Mathematics and Applied Mathematics (Minor)",
+      "studyType": "Bachelor of Economics (Major) & Bachelor of Science (Minor)",
+      "startDate": "2019-09-01",
+      "endDate": "2023-07-01",
+      "courses": [
+        "Mathematical Analysis", 
+        "Advanced Algebra", 
+        "Probability Theory",
+        "Applied Stochastic Process",
+        "Mathematical Statistics",
+        "Econometrics"
+      ]
+    },
+    {
+      "institution": "The High School Affiliated to Beijing Normal University",
+      "location": "Beijing, China",
+      "url": "https://en.bjsdfz.com/",
+      "studyType": "High School",
+      "startDate": "2016-09-01",
+      "endDate": "2019-07-01"
     }
   ],
-  "education": [],
-  "awards": [],
-  "certificates": [
+  "awards": [
     {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "title": "LSE PhD Studentship",
+      "date": "2024-09",
+      "awarder": "London School of Economics and Political Science"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
+      "title": "Outstanding Graduate",
+      "date": "2023-06",
+      "awarder": "Beihang University"
+    }, 
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "title": "Academic Merit Scholarship", 
+      "date": "2019-09",
+      "awarder": "School of Economics and Management, Beihang University", 
+      "summary": "Awarded to students with Top 30% acadamic performance."
     }
   ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
-    }
-  ],
+  "certificates": [],
+  "publications": [],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "name": "Coding: Python, R, SQL, C"
     }
   ],
-  "languages": [],
-  "interests": [],
-  "references": [
+  "languages": [
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "language": "Mandarin",
+      "fluency": "Native speaker",
+      "icon": ""
     },
     {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
     }
   ],
-  "projects": [
+  "interests": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "Sports: Badminton, Swimming"
     }
-  ]
+  ],
+  "references": [],
+  "projects": []
 }
