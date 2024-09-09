@@ -10,6 +10,6 @@ related_publications: false
 
 This is a test page for ST552.
 
-\begin{equation*}
+\begin{equation}
 (\Omega, \mathcal{F}, \mathbb{P})
-\end{equation*}
+\end{equation}
