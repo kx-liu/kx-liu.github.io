@@ -4,11 +4,10 @@ permalink: /courses/
 title: Courses
 description: Materials for courses I took and taught.
 nav: true
-nav_order: 6
+nav_order: 3
 display_categories: [Take, Teach]
 horizontal: false
 ---
-
 
 <!-- pages/courses.md -->
 <div class="courses">
@@ -39,7 +38,6 @@ horizontal: false
   {% endfor %}
 
 {% else %}
-
 
 <!-- Display courses without categories -->
 
