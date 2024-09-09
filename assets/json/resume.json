@@ -14,6 +14,7 @@
   "work": [
     {
       "name": "London School of Economics and Political Science",
+      "url": "https://www.lse.ac.uk/", 
       "position": "Graduate Teaching Assistant",
       "location": "London, UK",
       "startDate": "2024-09-30",
@@ -22,6 +23,7 @@
     }, 
     {
       "name": "iQIYI.com", 
+      "url": "https://ir.iqiyi.com/", 
       "position": "Business Analyst Intern",
       "location": "Beijing, China",
       "startDate": "2022-09",
@@ -35,6 +37,7 @@
     }, 
     {
       "name": "Industrial and Commercial Bank of China (ICBC)",
+      "url": "https://www.icbc-ltd.com/icbcltd/en/",
       "position": "Statistical Analyst Intern", 
       "location": "Beijing, China",
       "startDate": "2022-07",
@@ -48,6 +51,7 @@
     },
     {
       "name": "KPMG China",
+      "url": "https://kpmg.com/cn/en/home.html",
       "position": "Audit Intern",
       "location": "Beijing, China",
       "startDate": "2021-07",
@@ -73,24 +77,76 @@
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
+      "institution": "London School of Economics and Political Science (LSE)",
+      "location": "London, UK",
+      "url": "https://www.lse.ac.uk/",
+      "area": "Statistics",
+      "studyType": "Ph.D.",
+      "startDate": "2024-09-25",
+      "endDate": "2029-09-30",
+      "courses": [
+        "Probability and Mathematical Statistics I (Mainly focused on Measure Theory)", 
+        "Statistical Modelling and Data Analysis", 
+        "Foundations of Machine Learning"
+      ]
+    }, 
+    {
+      "institution": "London School of Economics and Political Science (LSE)",
+      "score": "Distinction",
+      "location": "London, UK",
+      "url": "https://www.lse.ac.uk/",
+      "area": "Statistics (Financial Statistics)",
+      "studyType": "Master of Science",
+      "startDate": "2023-09-25",
+      "endDate": "2024-07-02",
+      "courses": [
+        "Time Series", 
+        "Reinforcement Learnings", 
+        "Financial Statistics"
+      ]
+    }, 
+    {
+      "institution": "Beihang University (BUAA)",
+      "location": "Beijing, China",
+      "url": "https://ev.buaa.edu.cn/",
+      "area": "Economic Statistics (Major) & Mathematics and Applied Mathematics (Minor)",
+      "studyType": "Bachelor of Economics (Major) & Bachelor of Science (Minor)",
+      "startDate": "2019-09-01",
+      "endDate": "2023-07-01",
+      "courses": [
+        "Mathematical Analysis", 
+        "Advanced Algebra", 
+        "Probability Theory",
+        "Applied Stochastic Process",
+        "Mathematical Statistics",
+        "Econometrics"
+      ]
+    },
+    {
+      "institution": "The High School Affiliated to Beijing Normal University",
+      "location": "Beijing, China",
+      "url": "https://en.bjsdfz.com/",
+      "studyType": "High School",
+      "startDate": "2016-09-01",
+      "endDate": "2019-07-01"
     }
   ],
   "awards": [
     {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
+      "title": "LSE PhD Studentship",
+      "date": "2024-09",
+      "awarder": "London School of Economics and Political Science"
+    },
+    {
+      "title": "Outstanding Graduate",
+      "date": "2023-06",
+      "awarder": "Beihang University"
+    }, 
+    {
+      "title": "Academic Merit Scholarship", 
+      "date": "2019-09 - 2022-07",
+      "awarder": "School of Economics and Management, Beihang University", 
+      "summary": "Awarded to students with Top 30% acadamic performance."
     }
   ],
   "certificates": [
@@ -177,7 +233,7 @@
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Manadarin",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -189,15 +245,11 @@
   ],
   "interests": [
     {
-      "name": "Physics",
+      "name": "Sports",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Badminton",
+        "Swimming"
       ]
     }
   ],
