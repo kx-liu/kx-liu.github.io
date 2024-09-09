@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: "Email: K.Liu31@lse.ac.uk"
+subtitle: "Contact me: K.Liu31@lse.ac.uk"
 
 profile:
   align: right
