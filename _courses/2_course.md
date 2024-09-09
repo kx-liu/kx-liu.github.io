@@ -6,10 +6,11 @@ img:
 importance: 1
 category: Take
 related_publications: false
+enable_math: true
 ---
 
 This is a test page for ST552.
 
-\begin{equation}
+\begin{align*}
 (\Omega, \mathcal{F}, \mathbb{P})
-\end{equation}
+\end{align*}
