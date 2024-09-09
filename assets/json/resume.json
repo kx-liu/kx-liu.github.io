@@ -1,36 +1,62 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
-    "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "name": "Kaixin Liu",
+    "email": "K.Liu31@lse.ac.uk",
+    "phone": "(44) 7467162417",
+    "url": "https://kx-liu.github.io/",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "address": "Room 7.02B, Columbia House, 69 Aldwych",
+      "postalCode": "WC2B 4RR",
+      "city": "London",
+      "countryCode": "UK"
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "London School of Economics and Political Science",
+      "position": "Graduate Teaching Assistant",
+      "location": "London, UK",
+      "startDate": "2024-09-30",
+      "endDate": "2025-06-20",
+      "summary": "ST109: Elementary Statistical Theory I."
+    }, 
+    {
+      "name": "iQIYI.com", 
+      "position": "Business Analyst Intern",
+      "location": "Beijing, China",
+      "startDate": "2022-09",
+      "endDate": "2023-01",
+      "summary": "Worked on several projects of user behavior analysis, product design and development, and revenue analysis.",
+      "highlights": [
+        "Time series forecasting",
+        "Video billboard product design",
+        "Revenue business analysis"
+      ]
+    }, 
+    {
+      "name": "Industrial and Commercial Bank of China (ICBC)",
+      "position": "Statistical Analyst Intern", 
+      "location": "Beijing, China",
+      "startDate": "2022-07",
+      "endDate": "2022-08",
+      "summary": "Worked on financial industry research, in credit supporting for the real economy and digital transformation.",
+      "highlights": [
+        "Industry research",  
+        "Qualitative research",
+        "NLP"
+      ]
+    },
+    {
+      "name": "KPMG China",
+      "position": "Audit Intern",
+      "location": "Beijing, China",
+      "startDate": "2021-07",
+      "endDate": "2021-08",
+      "summary": "Audit interbank lending of the Agricultural Bank of China.",
+      "highlights": [
+        "Financial Audits",
+        "Financial Accounting"
+      ]
     }
   ],
   "volunteer": [
