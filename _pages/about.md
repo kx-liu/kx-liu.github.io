@@ -1,25 +1,24 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Statistics Ph.D. Candidate
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Room 7.02B</p>
+    <p>Columbia House, 69 Aldwych</p>
+    <p>London WC2B 4RR</p>
+    <p>United Kingdom</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Kaixin is now enrolled in the MPhil/PhD program in Statistics in the [department of Statistics](https://www.lse.ac.uk/statistics) at the London School of Economics and Political Science ([LSE](https://www.lse.ac.uk/)). He is interested in time series analysis, focusing on high-dimensional time series, tensor time series, non-linear time series, high-frequency time series, among others. He is also enthusiastic about cutting-edge fields like machine learning and data science. Kaixin welcomes collaboration and dialogue with researchers and professionals from both academia and industry.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Before pursuing his PhD at LSE, Kaixin holds an MSc in Statistics (Financial Statistics) from LSE and a BEcon in Economic Statistics from [Beihang University](https://ev.buaa.edu.cn/), formerly known as Beijing University of Aeronautics and Astronautics.
