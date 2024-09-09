@@ -6,11 +6,10 @@ img:
 importance: 1
 category: Take
 related_publications: false
-enable_math: true
 ---
 
 This is a test page for ST552.
 
 \begin{align*}
-(\Omega, \mathcal{F}, \mathbb{P})
+(\Omega, \mathcal{F}, P)
 \end{align*}
