@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2024-09-01 18:24:00+0800
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Kaixin has begun his MPhil/PhD study at the London School of Economics and Political Science (LSE) in September 2024. He will be supervised by [Prof. [Clifford Lam](https://www.lse.ac.uk/statistics/people/clifford-lam)] and [Dr. [Yunxiao Chen](https://www.lse.ac.uk/statistics/people/yunxiao-chen)].
