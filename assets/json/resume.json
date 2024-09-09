@@ -2,8 +2,7 @@
   "basics": {
     "name": "Kaixin Liu",
     "email": "K.Liu31@lse.ac.uk",
-    "phone": "(44) 7467162417",
-    "url": "https://kx-liu.github.io/",
+    "phone": "(44) 7467-162417",
     "location": {
       "address": "Room 7.02B, Columbia House, 69 Aldwych",
       "postalCode": "WC2B 4RR",
@@ -131,24 +130,7 @@
       "endDate": "2019-07-01"
     }
   ],
-  "awards": [
-    {
-      "title": "LSE PhD Studentship",
-      "date": "2024-09",
-      "awarder": "London School of Economics and Political Science"
-    },
-    {
-      "title": "Outstanding Graduate",
-      "date": "2023-06",
-      "awarder": "Beihang University"
-    }, 
-    {
-      "title": "Academic Merit Scholarship", 
-      "date": "2019-09",
-      "awarder": "School of Economics and Management, Beihang University", 
-      "summary": "Awarded to students with Top 30% acadamic performance."
-    }
-  ],
+  "awards": [],
   "certificates": [
     {
       "name": "Machine Learning",
@@ -231,28 +213,8 @@
       ]
     }
   ],
-  "languages": [
-    {
-      "language": "Manadarin",
-      "fluency": "Native speaker",
-      "icon": ""
-    },
-    {
-      "language": "English",
-      "fluency": "Fluent",
-      "icon": ""
-    }
-  ],
-  "interests": [
-    {
-      "name": "Sports",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Badminton",
-        "Swimming"
-      ]
-    }
-  ],
+  "languages": [],
+  "interests": [],
   "references": [
     {
       "name": "Professor John Doe",
