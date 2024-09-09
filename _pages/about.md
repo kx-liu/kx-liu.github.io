@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Statistics Ph.D. Candidate
+subtitle: "Email: K.Liu31@lse.ac.uk"
 
 profile:
   align: right
