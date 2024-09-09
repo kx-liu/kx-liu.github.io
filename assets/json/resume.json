@@ -20,11 +20,11 @@
       "startDate": "2024-09-25",
       "endDate": "2029-09-30",
       "courses": [
-        "Probability and Mathematical Statistics I (Mainly focused on Measure Theory)", 
-        "Statistical Modelling and Data Analysis", 
+        "Probability and Mathematical Statistics I (Mainly focused on Measure Theory)",
+        "Statistical Modelling and Data Analysis",
         "Foundations of Machine Learning"
       ]
-    }, 
+    },
     {
       "institution": "London School of Economics and Political Science (LSE)",
       "score": "Distinction",
@@ -34,12 +34,8 @@
       "studyType": "Master of Science",
       "startDate": "2023-09-25",
       "endDate": "2024-07-02",
-      "courses": [
-        "Time Series", 
-        "Reinforcement Learnings", 
-        "Financial Statistics"
-      ]
-    }, 
+      "courses": ["Time Series", "Reinforcement Learnings", "Financial Statistics"]
+    },
     {
       "institution": "Beihang University (BUAA)",
       "location": "Beijing, China",
@@ -49,8 +45,8 @@
       "startDate": "2019-09-01",
       "endDate": "2023-07-01",
       "courses": [
-        "Mathematical Analysis", 
-        "Advanced Algebra", 
+        "Mathematical Analysis",
+        "Advanced Algebra",
         "Probability Theory",
         "Applied Stochastic Process",
         "Mathematical Statistics",
@@ -76,11 +72,11 @@
       "title": "Outstanding Graduate",
       "date": "2023-06",
       "awarder": "Beihang University"
-    }, 
+    },
     {
-      "title": "Academic Merit Scholarship", 
+      "title": "Academic Merit Scholarship",
       "date": "2019-09 -- 2022-07",
-      "awarder": "School of Economics and Management, Beihang University", 
+      "awarder": "School of Economics and Management, Beihang University",
       "summary": "Awarded to students with Top 30% acadamic performance."
     }
   ],
@@ -93,34 +89,26 @@
       "startDate": "2024-09-30",
       "endDate": "2025-06-20",
       "summary": "ST109: Elementary Statistical Theory I."
-    }, 
+    },
     {
-      "name": "iQIYI.com", 
-      "url": "https://ir.iqiyi.com/", 
+      "name": "iQIYI.com",
+      "url": "https://ir.iqiyi.com/",
       "position": "Business Analyst Intern",
       "location": "Beijing, China",
       "startDate": "2022-09",
       "endDate": "2023-01",
       "summary": "Worked on several projects of user behavior analysis, product design and development, and revenue analysis.",
-      "highlights": [
-        "Time series forecasting",
-        "Video billboard product design",
-        "Revenue business analysis"
-      ]
-    }, 
+      "highlights": ["Time series forecasting", "Video billboard product design", "Revenue business analysis"]
+    },
     {
       "name": "Industrial and Commercial Bank of China (ICBC)",
       "url": "https://www.icbc-ltd.com/icbcltd/en/",
-      "position": "Statistical Analyst Intern", 
+      "position": "Statistical Analyst Intern",
       "location": "Beijing, China",
       "startDate": "2022-07",
       "endDate": "2022-08",
       "summary": "Worked on financial industry research, in credit supporting for the real economy and digital transformation.",
-      "highlights": [
-        "Industry research",  
-        "Qualitative research",
-        "NLP"
-      ]
+      "highlights": ["Industry research", "Qualitative research", "NLP"]
     },
     {
       "name": "KPMG China",
@@ -130,10 +118,7 @@
       "startDate": "2021-07",
       "endDate": "2021-08",
       "summary": "Audit interbank lending of the Agricultural Bank of China.",
-      "highlights": [
-        "Financial Audits",
-        "Financial Accounting"
-      ]
+      "highlights": ["Financial Audits", "Financial Accounting"]
     }
   ],
   "volunteer": [],

@@ -4,7 +4,7 @@
 
 title: blank # the website title (if blank, full name will be used instead)
 first_name: Kaixin
-middle_name: 
+middle_name:
 last_name: Liu
 email: K.Liu31@lse.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -443,8 +443,6 @@ enable_medium_zoom: true # enables image zoom feature (as on medium.com)
 enable_progressbar: true # enables a horizontal progress bar linked to the vertical scroll position
 enable_video_embedding: false # enables video embedding for bibtex entries. If false, the button opens the video link in a new window.
 enable_courses_categories: true
-
-
 
 # -----------------------------------------------------------------------------
 # Library versions

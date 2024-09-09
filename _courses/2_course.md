@@ -2,7 +2,7 @@
 layout: page
 title: ST552
 description: Materials for ST552.
-img: 
+img:
 importance: 1
 category: Take
 related_publications: false
@@ -11,5 +11,5 @@ related_publications: false
 This is a test page for ST552.
 
 \begin{equation*}
-    (\Omega, \mathcal{F}, \mathbb{P})
+(\Omega, \mathcal{F}, \mathbb{P})
 \end{equation*}
