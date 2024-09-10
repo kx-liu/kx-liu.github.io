@@ -1,10 +1,10 @@
 ---
 layout: page
-title: ST109
-description: Materials for ST109.
+title: Event and Probability
+description: Definition of event, probability of event.
 img:
 importance: 1
-category: Teach
+category: ST109 Elementary Statistical Theory I
 related_publications: false
 ---
 
@@ -16,3 +16,7 @@ import numpy as np
 def test_function():
     print('This is a test function.')
 ```
+
+$$
+P(A\mid B) = \frac{P(B\mid A)P(A)}{P(B)}
+$$
