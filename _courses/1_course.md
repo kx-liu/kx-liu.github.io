@@ -6,6 +6,7 @@ img:
 importance: 1
 category: ST109 Elementary Statistical Theory I
 related_publications: false
+pseudocode: true
 ---
 
 This is a test page for ST109.
