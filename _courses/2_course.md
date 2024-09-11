@@ -1,17 +1,13 @@
 ---
 layout: page
-title: Measure Sapce
-description: sample space, σ-algebra, set function.
+title: Lec 1 Measure Space
+description: Sample space, σ-algebra, set function.
 img:
 importance: 1
 category: ST552 Probability and Mathematical Statistics I
 related_publications: false
 pseudocode: true
 ---
-
-# ST452 Probability and Mathematical Statistics
-
-## Lecture 1 Measure Spaces
 
 Probability Space: $(\Omega, \mathcal{F}, \mathbb{P})$
 
@@ -21,7 +17,7 @@ Probability Space: $(\Omega, \mathcal{F}, \mathbb{P})$
 
 We start with defining an essential information structure in measure theory, that is algebra and $\sigma$-algebra.
 
-### Definition 1 (Algebra)
+## Definition 1 (Algebra)
 
 A family of subsets of $\Omega$, $\mathcal{F}_0$, that satisfies to the following properties, is called an Algebra:
 
@@ -31,24 +27,28 @@ A family of subsets of $\Omega$, $\mathcal{F}_0$, that satisfies to the followin
 
 Additionally, 2. and 3. $\implies A \cap B \in \mathcal{F}_0$ because of the De Morgan's laws.
 
-#### Examples of Algebra
+### Examples of Algebra
 
 - "Power Set": $2^\Omega$
-- "Trivial algebra": $\{\Omega, \emptyset\}$
+- "Trivial algebra": $\set{\Omega, \emptyset}$
 
 $\sigma$-algebra allows us to "take the limit of a sequence of events", and the definition is as follows.
 
-### Definition 2 ($\sigma$-algebra)
+## Definition 2 ($\sigma$-algebra)
 
 A family of subsets of $\Omega$, $\mathcal{F}$, that satisfies to the following properties, is called a $\sigma$-algebra:
 
 1. $\Omega \in \mathcal{F}$
 2. $A \in \mathcal{F} \implies A^c \in \mathcal{F}$
-3. Let $(A_n)_{n \in \mathbb{N}}$ be a sequence of events, $\forall n \in \mathbb{N} : A_n \in \mathcal{F} \implies \cup_{n \in \mathbb{N}} A_n \in \mathcal{F}$
+3. Let $(A_n)_{n \in \mathbb{N}}$ be a sequence of events,
 
-Same additionally, 2. and 3. $\implies \bigcap_{n \in \mathbb{N}} A_n \in \mathcal{F}$ because of the De Morgan's laws. Thus, a $\sigma$-algebra on $\Omega$ is a family of subsets of $\Omega$ "stable under any countable collection of set operations".
+    $$
+    \forall n \in \mathbb{N} : A_n \in \mathcal{F} \implies \bigcup_{n\in \mathbb{N}} {A_n} \in \mathcal{F}
+    $$
 
-### Definition 3 (Set Functions on Algebras)
+Same additionally, 2. and 3. $\implies \bigcap_{n \in \mathbb{N}} A_n \in \mathcal{F}$ because of the De Morgan's laws. Thus, a $\sigma$-algebra on $\Omega$ is a family of subsets of $\Omega$ "stable under any countable collection of set operations". 
+
+## Definition 3 (Set Functions on Algebras)
 
 Let $\Omega$ be a set, let $\mathcal{F}_0$ be an algebra on $\Omega$, and let $\mu_0$ be a non-negative set function on $\mathcal{F}_0$, that is $\mu_0: \mathcal{F}_0 \rightarrow [0, \infty]$, if it satisfies the following properties:
 
@@ -56,12 +56,12 @@ Let $\Omega$ be a set, let $\mathcal{F}_0$ be an algebra on $\Omega$, and let $\
 2. "Finite Additivity": For a sequence of events $(A_n)_{n=1}^m$, $\forall n=1,...,m : A_n \in \mathcal{F}_0$, and $A_n$ are mutually disjoint,
 
    $$
-   \mu_0(\bigcup_{n=1}^{m} A_n) = \sum_{n=1}^{m} \mu_0(A_n)
+   \mu_0\left(\bigcup_{n=1}^{m} A_n\right) = \sum_{n=1}^{m} \mu_0(A_n)
    $$
 
 Furthermore, we call set functions on $\sigma$-algebras measures on $\sigma$-algebras.
 
-### Definition 4 (Measure of $\sigma$-algebra)
+## Definition 4 (Measure of $\sigma$-algebra)
 
 Let $\Omega$ be a set, let $\mathcal{F}$ be a $\sigma$-algebra on $\Omega$, and let $\mu$ be a non-negative set function on $\mathcal{F}$, that is $\mu: \mathcal{F} \rightarrow [0, \infty]$, if it satisfies the following properties:
 
@@ -69,12 +69,177 @@ Let $\Omega$ be a set, let $\mathcal{F}$ be a $\sigma$-algebra on $\Omega$, and 
 2. "Countable Additivity": For a sequence of events $(A_n)_{n \in \mathbb{N}}$, $\forall n \in \mathbb{N} : A_n \in \mathcal{F}$, and $A_n$ are mutually disjoint,
 
    $$
-   \mu(\bigcup_{n=1}^{\infty} A_n) = \sum_{n=1}^{\infty} \mu(A_n)
+   \mu\left(\bigcup_{n=1}^{\infty} A_n\right) = \sum_{n=1}^{\infty} \mu(A_n)
    $$
 
-### Definition 5 (Concerning Measures)
+## Definition 5 (Concerning Measures)
 
 - Finite measure: $\mu(\Omega) < \infty$
-- $\sigma$-finite measure: $\exists (A_n)_{n \in \mathbb{N}} : \Omega = \bigcup_{n=1}^{\infty} A_n \text{ and } \mu(A_n) < \infty (\forall n \in \mathbb{N})$
-  - E.g., let $\Omega = \mathbb{N}$, let $\mathcal{F} = 2^{\Omega} = 2^{\mathbb{N}}$, and let $\mu(A) = |A|$ and $\mu(\Omega) = \infty$, but for $A_n = \{n\}, \mu(A_n) < \infty$, that is $\mu$ is $\sigma$-finite measure.
+- $\sigma$-finite measure: 
+
+    $$
+    \exists (A_n)_{n \in \mathbb{N}} : \Omega = \bigcup_{n=1}^{\infty} A_n \text{ and } \mu(A_n) < \infty (\forall n \in \mathbb{N})
+    $$
+    
+    - E.g., let $\Omega = \mathbb{N}$, let $\mathcal{F} = 2^{\Omega} = 2^{\mathbb{N}}$, and let $\mu(A) = \lvert A\rvert$ and $\mu(\Omega) = \infty$, but for $A_n = \set{n}, \mu(A_n) < \infty$, that is $\mu$ is $\sigma$-finite measure.
 - Probability measure: $\mu(\Omega) = 1$. In fact, there's no intrinsic but only scaling difference. We denote probability measure as $\mathbb{P}$.
+
+## Definition 6 (Concerning Spaces)
+
+- Measurable space: $(\Omega, \mathcal{F})$
+- Measure space: $(\Omega, \mathcal{F}, \mu)$
+- Probability space (probability triple): $(\Omega, \mathcal{F}, \mathbb{P})$
+
+For now, we have defined a delicate and important information structure $\sigma$-algebra on $\Omega$, usually denote as $\mathcal{F}$. To measure the information in a trivial manner, we defined a non-negative set function $\mu$ that follows additivity for the unions of events, which can be recognised as the measure of $\mathcal{F}$, and esspecially it's called probability measure $\mathbb{P}$ when $\mu(\Omega)=1$. 
+
+**However**, $\sigma$-algebra is so complicated that it is usually impossible to write down the typical element of a $\sigma$-algebra. Hence, a simpler "information" structure is needed, which could be used to **generate** a $\sigma$-algebra.
+
+$\mathcal{A}:=$ a collection of subsets of $\Omega$
+
+We are looking at the $\sigma$-algebra generated by collection $\mathcal{A}$.
+
+## Definition 7 (Generation of $\sigma$-algebra)
+
+Let $\mathcal{A}$ be a collection of subsets of $\Omega$. Then $\sigma(\mathcal{A})=\mathcal{F}$, the $\sigma$-algebra generated by $\mathcal{A}$, is the smallest $\sigma$-algebra $\mathcal{F}$ on $\Omega$ such that $\mathcal{A}\subseteq\mathcal{F}$, that is:
+
+1. $\mathcal{F}\supseteq\mathcal{A}$
+2. For all $\sigma$-algebra $\mathcal{F}^{\prime}$, $\mathcal{F}^{\prime}\supseteq\mathcal{A}\implies\mathcal{F}^{\prime}\supseteq\mathcal{F}$
+
+The generation of $\sigma$-algebra can also be extended to the generation of other information structures.
+
+In particular, $\sigma(\mathcal{A})$ is the intersection of all $\sigma$-algebras on $\Omega$ which have $\mathcal{A}$ a subclass, that is
+$$
+\sigma(\mathcal{A})=\bigcap_{\mathcal{A}\subset\mathcal{F}}\mathcal{F}
+$$
+where $\mathcal{F}$ is all of the $\sigma$-algebras on $\Omega$ which have $\mathcal{A}$ a subclass, and the resulting structure is a $\sigma$-algebra. **(Try to prove it!!)**
+
+### Example of the generation of $\sigma$-algebra (Borel Algebra)
+
+Let $\Omega$ be a topological space. Take into account the open sets. $\mathcal{B}(\Omega)=\sigma(\text{all open sets})$, where $\mathcal{B}$ is called Borel algebra.
+
+For the moral of $\sigma$-algebras are "difficult", but $\pi$-systems and $\lambda$-systems are "easy", so we aim to work with the latter.
+
+## Definition 8 ($\pi$-system)
+
+Let $\Omega$ be a set. Let $\mathcal{C}$ be a $\pi$-system on $\Omega$, that is a collection of subsets of $\Omega$ stable under finite intersections:
+$$
+A_1,A_2\in\mathcal{C}\implies A_1\cap A_2\in\mathcal{C}
+$$
+
+### Example of $\pi$-system
+
+Let $\Omega=(0,1]$, and let $\mathcal{C}=\{(x,1]:x\in(0,1]\}$ is a $\pi$-system, but not $\sigma$-algebra.
+
+## Definition 9 ($\lambda$-system)
+
+Let $\Omega$ be a set. Let $\mathcal{L}$ be a $\lambda$-system on $\Omega$, that is a collection of subsets of $\Omega$ stable under the followings:
+
+1. $\Omega\in\mathcal{L}$
+
+2. $A,B\in\mathcal{L},A\subset B\implies B\setminus A\in\mathcal{L}$
+
+3. Let $(A_n)_{n\in \mathbb{N}}\in \mathcal{L}$, then $\forall n\in\mathbb{N}$,
+
+    $$
+    A_n\subset A_{n+1}\implies \bigcup_{n=1}^{\infty}A_n\in\mathcal{L}
+    $$
+
+## Theorem 1 ($\pi-\lambda$ theorem) / Dynkin's Lemma
+
+Let $\mathcal{C}$ is a $\pi$-system, then
+$$
+\sigma(\mathcal{C})=\lambda(\mathcal{C})
+$$
+where $\lambda(\mathcal{C})$ is the smallest $\lambda$-system that contains $\mathcal{C}$.
+
+## Theorem 2 (Corollary)
+
+Let $\mathcal{C}$ be a $\pi$-system on $\Omega$. Let $\mu_1$ and $\mu_2$ are two measures such that $\mu_1=\mu_2$ on $\mathcal{C}$ ($\mu_1(\Omega),\mu_2(\Omega)<\infty$). Then, $\mu_1=\mu_2$ on $\sigma(\mathcal{C})$.
+
+### Proof of theorem 2
+
+Let $\mathcal{L}$ be a collection of subsets of $\Omega$, and $\mathcal{L}=\set{A\in\sigma(\mathcal{L}): \mu_1(A)=\mu_2(A)}$. We claim that $\mathcal{L}$ is a $\lambda$-system (**Prove it!!**). Since $\mathcal{L}$ is a $\lambda$-system contains $\mathcal{C}$, it should contain the smallest $\lambda$-system containing $\mathcal{C}$, that is $\mathcal{L}\supset\lambda(\mathcal{C})=\sigma(\mathcal{C})$. Therefore, every set in the $\sigma$-algebra generated by $\mathcal{C}$ belongs to $\mathcal{L}$.
+
+Theorem 2 can be implied that if two probability measures agree on a $\pi$-system, then they agree on the $\sigma$-algebra generated by that $\pi$-system.
+
+## Theorem 3 (Caratheodory's Extension Theorem)
+
+Let $\Omega$ be a set, let $\mathcal{F}_0$ be an algebra on $\Omega$, and let $\mathcal{F}=\sigma(\mathcal{F}_0)$. If $\mu_0$ is a countable additive set function $\mu_0: \mathcal{F}_0\rightarrow[0,\infty]$, then there exists a measure $\mu$ on $(\Omega, \mathcal{F}):\mu=\mu_0$ on $\mathcal{F}_0$.
+
+### Example of Caratheodory's Extension Theorem (Lebesgue measure)
+
+Let $\Omega=(0,1]$. Let
+$$
+\mathcal{F}_0=\set{E:E=\bigcup_{i=1}^n(a_i,b_i],0\leq a_1\leq b_1\leq\cdots\leq a_n\leq b_n\leq1}
+$$
+Then, $\mathcal{F}_0$ is an algebra on $(0,1]$, and $\mathcal{F}:=\sigma(\mathcal{F}_0)=\mathcal{B}(0,1]$. Let
+$$
+\mu_0(E)=\sum_{i=1}^n{(b_i-a_i)}
+$$
+Then, $\mu_0$ is well-defined and additive on $\mathcal{F}_0$. Moreover, $\mu_0$ is countable additive on $\mathcal{F}_0$ (**Prove it!!**). Hence, by Theorem 3, there exists a unique measure $\mu$ on $((0,1],\mathcal{B}(0,1])$ extending $\mu_0$ on $\mathcal{F}_0$. This measure $\mu$ is called ***Lebesgue measure*** on $((0,1],\mathcal{B}(0,1])$.
+
+## Theorem 4 (Monotone-Convergence of Measure)
+
+1. If $(A_n)\in\mathcal{F}\ (n\in\mathbb{N})$ and $A_n\uparrow A$, then $\mu(A_n)\uparrow\mu(A)$. Notes, $A_n\uparrow A$ means: $A_n\subseteq A_{n+1}\ (\forall n\in\mathbb{N}), \bigcup A_n=A$.
+
+2. If $(B_n)\in\mathcal{F}\ (n\in\mathbb{N})$, $B_n\downarrow B$ and $\mu(B_k)<\infty$ for some $k$, then $\mu(B_n)\downarrow\mu(B)$.
+
+### Example of Monotone-convergence of measure
+
+Let $\Omega=\mathbb{R}$, let $\mu=Leb$, and let $A_n=(n,\infty)$. Then, $A_n\to\emptyset\ (n\to\infty)$, and $\mu(\emptyset)=0$.
+
+## Definition 10 (limsup & liminf)
+
+We define
+
+$$
+\begin{aligned}
+(E_n,i.o.)&:=(E_n\text{ infinitely often})\\
+&:=\lim\sup{E_n}:=\bigcap_{n=1}^\infty\bigcup_{m=n}^\infty{E_m}\\
+&=\{w: w\in E_n \text{ for infinitely many n}\}
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+(E_n,\text{eventually})&:=\lim\inf E_n:=\bigcup_{n=1}^\infty\bigcap_{m=n}^\infty{E_n}\\
+&=\{w:w\in E_n\text{ for all large n}\}
+\end{aligned}
+$$
+
+Also, $\lim_n{A_n}$ exists, if $\lim\sup_n{A_n}=\lim\inf_n{A_n}$, and we can prove that $\lim\sup_n{A_n}=\lim\inf_n{A_n}=\lim_nA_n$.
+
+## Theorem 5 (Reverse Fatou Lemma)
+
+Let $\mathbb{P}$ denotes the probability measure. We have 
+$$
+\mathbb{P}(\lim\sup{E_n})\geq\lim\sup\mathbb{P}(E_n)
+$$
+
+### Proof of reverse Fatou lemma
+
+Define $G_m:=\bigcup_{n\geq m}{E_n}$, we want to define $\lim_m{G_m}$. Noticing $G_m$ is a decreasing sequence, $G_m\downarrow G$, where $G:=\bigcap_{n\geq m}{E_n}=\lim\sup{E_n}$. Using the monotone convergence theorem, $\mathbb{P}(G_m)\downarrow\mathbb{P}(G)$. What's more, we have $\mathbb{P}(G_m)\geq\sup_{n\geq m}{\mathbb{P}(E_n)}$. Take the limit on both sides, we have 
+
+$$
+\lim_m{\mathbb{P}(G_m)}\geq\lim_m\sup_{n\geq m}\mathbb{P}(E_n)\implies\mathbb{P}(G)\geq\lim\sup\mathbb{P}(E_n)
+$$
+
+## Theorem 6 (First Borel-Cantelli Lemma, BC1)
+
+Let $(E_n)_{n\in\mathbb{N}}$ be a sequence of events. Then, we have
+
+$$
+\sum_{n\geq 1}{\mathbb{P}(E_n)<\infty}\implies \mathbb{P}(E_n,\ i.o.)=0.
+$$
+
+### Proof of BC1
+
+$\sum_{m\geq n}\mathbb{P}(E_n)\to0\quad(m\to\infty)$. 
+
+$\mathbb{P}(G)\leq\mathbb{P}(G_m)=\mathbb{P}(\bigcup_{n\geq m}{E_n})\leq\sum_{n\geq m}\mathbb{P}(E_n)\to 0\quad(m\to\infty)$.
+
+## Theorem 7 (Fatou Lemma)
+
+(It doesn't require $\mu$ to be $\mathbb{P}$, compared to the reverse Fatou lemma)
+
+Let $\mu$ be a measure. $\mu(\lim\inf{E_n})\leq\lim\inf\mu(E_n)$.
