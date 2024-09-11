@@ -1,19 +1,20 @@
 ---
 layout: page
-title: Lec 2 Random Variables
+title: Chapter 2 Random Variable
 description: Measurable functions, random variables, law, monotone class theorem.
-img:
 importance: 1
 category: ST552 Probability and Mathematical Statistics I
 related_publications: false
 pseudocode: true
 ---
 
+******
+
 Let $(\Omega,\mathcal{F})$ be a measurable space.
 
 ## Definition 1 ($\sigma$-measurable function)
 
-Suppose that $h:\Omega\to\mathbb{R}$. For $A\subseteq\mathbb{R}$, define $h^{-1}(A):=\set{\omega\in\Omega:h(w)\in A}$. We say that the function $h$ is $\mathcal{F}$-measurable ($h\in m\mathcal{F}$, where $m\mathcal{F}$ is the class of $\mathcal{F}$-measurable functions on $\Omega$), if
+Suppose that $h:\Omega\to\mathbb{R}$. For $A\subseteq\mathbb{R}$, define $h^{-1}(A):=\lbrace \omega\in\Omega:h(w)\in A\rbrace$. We say that the function $h$ is $\mathcal{F}$-measurable ($h\in m\mathcal{F}$, where $m\mathcal{F}$ is the class of $\mathcal{F}$-measurable functions on $\Omega$), if
 
 $$
 \forall B\in\mathcal{B}(\mathbb{R}):h^{-1}(B)\in\mathcal{F}
@@ -36,11 +37,13 @@ Let $\mathcal{C}$ be a family of subsets. If $\sigma(\mathcal{C})=\mathcal{B}$, 
 
 ### Proof of theorem 1
 
-Assert $\mathcal{A}:=\set{B\in\mathcal{B}: h^{-1}(B)\in\mathcal{F}}$ is a $\sigma$-algebra (**Prove it!!)**. $\mathcal{A}\supset\mathcal{C}$, hence $\mathcal{A}\supset\sigma(\mathcal{C})=\mathcal{B}$, which means each Borel set is the subset of $\mathcal{A}$, that is $\forall B\in\mathcal{B}: h^{-1}(B)\in\mathcal{A}$.
+Assert $\mathcal{A}:=\lbrace B\in\mathcal{B}: h^{-1}(B)\in\mathcal{F} \rbrace$ is a $\sigma$-algebra (**Prove it!!)**. $\mathcal{A}\supset\mathcal{C}$, hence $\mathcal{A}\supset\sigma(\mathcal{C})=\mathcal{B}$, which means each Borel set is the subset of $\mathcal{A}$, that is $\forall B\in\mathcal{B}: h^{-1}(B)\in\mathcal{A}$.
 
 ### Corollary of theorem 1
 
-Suppose $\Omega$ is a topological space, and the function $h:\Omega\to\mathbb{R}$ is continuous. Then, $h\in\mathcal{F}$. ($\sigma(\text{all open sets})=\mathcal{B}$, since $h$ is continuous, $h^{-1}(\text{open set})\subset\Omega$, thus $h\in\mathcal{F}$)
+Suppose $\Omega$ is a topological space, and the function $h:\Omega\to\mathbb{R}$ is continuous. Then, $h\in\mathcal{F}$. 
+
+Proof: $\sigma(\text{all open sets})=\mathcal{B}$, since $h$ is continuous, $h^{-1}(\text{open set})\subset\Omega$, thus $h\in\mathcal{F}$.
 
 ## Lemma 1
 
@@ -53,22 +56,22 @@ Let $(g_n)_{n\geq1}\in\mathcal{F}$, then
 1. $\inf_ng_n\in\mathcal{F}$
 2. $\lim\inf g_n\in\mathcal{F}$
 3. $\lim\sup g_n\in\mathcal{F}$
-4. $\set{\omega:\lim_ng_n(\omega)\text{ exists in }\mathbb{R}}\in\mathcal{F}$
+4. $\lbrace \omega:\lim_ng_n(\omega)\text{ exists in }\mathbb{R} \rbrace\in\mathcal{F}$
 
 ### Proof of Lemma 2
 
-1. $\forall\alpha\in\mathbb{R}:\set{\inf_ng_n\geq\alpha}:=\set{\omega\in\Omega:\inf_ng_n(w)\geq\alpha}\in\mathcal{F}\implies\inf_ng_n\in\mathcal{F}$, since $\sigma([\alpha,\infty):\alpha\in\mathbb{R})=\mathcal{B}$, and $\inf_n g_n^{-1}([\alpha,\infty))=\set{\omega\in\Omega:\inf_ng_n(w)\geq\alpha}=\set{\inf_ng_n\geq\alpha}=\bigcap_n\set{g_n\geq\alpha}\in\mathcal{F}$
+1. $\forall\alpha\in\mathbb{R}:\lbrace\inf_ng_n\geq\alpha\rbrace:=\lbrace\omega\in\Omega:\inf_ng_n(w)\geq\alpha\rbrace\in\mathcal{F}\implies\inf_ng_n\in\mathcal{F}$, since $\sigma([\alpha,\infty):\alpha\in\mathbb{R})=\mathcal{B}$, and $\inf_n g_n^{-1}([\alpha,\infty))=\lbrace\omega\in\Omega:\inf_ng_n(w)\geq\alpha\rbrace=\lbrace\inf_ng_n\geq\alpha\rbrace=\bigcap_n\lbrace g_n\geq\alpha\rbrace\in\mathcal{F}$
 2. Prove it!
 3. Prove it!
-4. $\set{\omega:\lim_ng_n(\omega)\text{ exists in }\mathbb{R}}=\set{\omega\in\Omega:\lim\sup g_n(\omega)=\lim\inf g_n(\omega)}\cap\set{\omega\in\Omega:\lim\sup g_n(\omega)<\infty}\cap\set{\omega\in\Omega:\lim\inf g_n(\omega)>-\infty}\in\mathcal{F}$
+4. $\lbrace\omega:\lim_ng_n(\omega)\text{ exists in }\mathbb{R}\rbrace=\lbrace\omega\in\Omega:\lim\sup g_n(\omega)=\lim\inf g_n(\omega)\rbrace\cap\lbrace\omega\in\Omega:\lim\sup g_n(\omega)<\infty\rbrace\cap\lbrace\omega\in\Omega:\lim\inf g_n(\omega)>-\infty\rbrace\in\mathcal{F}$
 
 ### Example
 
-Let $\Omega=\set{H,T}^{\mathbb{N}}$, that is tossing a coin n times. $A_{n,H}:=\set{\omega:\omega_n=H}$, $A_{n,T}:=\set{\omega:\omega_n=T}$, $\mathcal{F}:=\sigma(A_{n,\omega};n\in\mathbb{N}$, $\omega\in\set{H,T})$. $X_n=1$ if $\omega_n=H$, $X_n=0$ otherwise. $S_n=\sum_{i=1}^nX_i$. $\Lambda=\set{\omega:\lim_{n\to\infty}\frac{S_n}{n}=p\in(0,1)}\in\mathcal{F}$. $\mathcal{F}=\sigma(X_m:m\leq n)\in\mathcal{F}$.
+Let $\Omega=\lbrace H,T\rbrace^{\mathbb{N}}$, that is tossing a coin n times. $A_{n,H}:=\lbrace\omega:\omega_n=H\rbrace$, $A_{n,T}:=\lbrace\omega:\omega_n=T\rbrace$, $\mathcal{F}:=\sigma(A_{n,\omega};n\in\mathbb{N}$, $\omega\in\lbrace H,T\rbrace)$. $X_n=1$ if $\omega_n=H$, $X_n=0$ otherwise. $S_n=\sum_{i=1}^nX_i$. $\Lambda=\lbrace\omega:\lim_{n\to\infty}\frac{S_n}{n}=p\in(0,1)\rbrace\in\mathcal{F}$. $\mathcal{F}=\sigma(X_m\leq n)\in\mathcal{F}$.
 
 ## $\sigma$-algebras generated by RVs
 
-In the above example, $\mathcal{F}_n=\sigma(X_m:m\leq n)$ is the smallest $\sigma$-algebra that makes all $X_m$, $m=1,\dots,n$ are measurable. Any collection to $(X_i)$ ($i\in\mathcal{I}$) can be extended.
+In the above example, $\mathcal{F}_n=\sigma(X_m:m\leq n)$ is the smallest $\sigma$-algebra that makes all $X_m$, $m=1,\dots,n$ are measurable. Any collection to $(X_i)\_{i\in\mathcal{I}}$ can be extended.
 
 ## Definition 2 (Distribution function and law of X)
 
@@ -80,7 +83,7 @@ $$
 
 Observe that $\mathcal{L}_X$ is a set function on $\mathcal{B}$, and it is a probability measure on $\mathcal{B}$. (**Prove it!!**)
 
-Recall $\mathcal{B}=\sigma((-\infty,\alpha]:\alpha\in\mathbb{R})$. $\{(-\infty,\alpha]:\alpha\in\mathbb{R}\}$ is a $\pi$-system. If we want to characterize the probability measure $\mathcal{L}_X$, we know that it is enough to look at the behaviour of the probability measure on $\pi$-system.
+Recall $\mathcal{B}=\sigma((-\infty,\alpha]:\alpha\in\mathbb{R})$. $\\{(-\infty,\alpha]:\alpha\in\mathbb{R}\\}$ is a $\pi$-system. If we want to characterize the probability measure $\mathcal{L}_X$, we know that it is enough to look at the behaviour of the probability measure on $\pi$-system.
 
 Therefore, define the distribution function as follows:
 
