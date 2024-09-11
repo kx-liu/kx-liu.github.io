@@ -122,6 +122,7 @@ For the moral of $\sigma$-algebras are "difficult", but $\pi$-systems and $\lamb
 ## Definition 8 ($\pi$-system)
 
 Let $\Omega$ be a set. Let $\mathcal{C}$ be a $\pi$-system on $\Omega$, that is a collection of subsets of $\Omega$ stable under finite intersections:
+
 $$
 A_1,A_2\in\mathcal{C}\implies A_1\cap A_2\in\mathcal{C}
 $$
@@ -135,9 +136,7 @@ Let $\Omega=(0,1]$, and let $\mathcal{C}=\{(x,1]:x\in(0,1]\}$ is a $\pi$-system,
 Let $\Omega$ be a set. Let $\mathcal{L}$ be a $\lambda$-system on $\Omega$, that is a collection of subsets of $\Omega$ stable under the followings:
 
 1. $\Omega\in\mathcal{L}$
-
 2. $A,B\in\mathcal{L},A\subset B\implies B\setminus A\in\mathcal{L}$
-
 3. Let $(A_n)_{n\in \mathbb{N}}\in \mathcal{L}$, then $\forall n\in\mathbb{N}$,
 
     $$
@@ -147,6 +146,7 @@ Let $\Omega$ be a set. Let $\mathcal{L}$ be a $\lambda$-system on $\Omega$, that
 ## Theorem 1 ($\pi-\lambda$ theorem) / Dynkin's Lemma
 
 Let $\mathcal{C}$ is a $\pi$-system, then
+
 $$
 \sigma(\mathcal{C})=\lambda(\mathcal{C})
 $$
@@ -169,19 +169,22 @@ Let $\Omega$ be a set, let $\mathcal{F}_0$ be an algebra on $\Omega$, and let $\
 ### Example of Caratheodory's Extension Theorem (Lebesgue measure)
 
 Let $\Omega=(0,1]$. Let
+
 $$
 \mathcal{F}_0=\set{E:E=\bigcup_{i=1}^n(a_i,b_i],0\leq a_1\leq b_1\leq\cdots\leq a_n\leq b_n\leq1}
 $$
+
 Then, $\mathcal{F}_0$ is an algebra on $(0,1]$, and $\mathcal{F}:=\sigma(\mathcal{F}_0)=\mathcal{B}(0,1]$. Let
+
 $$
 \mu_0(E)=\sum_{i=1}^n{(b_i-a_i)}
 $$
+
 Then, $\mu_0$ is well-defined and additive on $\mathcal{F}_0$. Moreover, $\mu_0$ is countable additive on $\mathcal{F}_0$ (**Prove it!!**). Hence, by Theorem 3, there exists a unique measure $\mu$ on $((0,1],\mathcal{B}(0,1])$ extending $\mu_0$ on $\mathcal{F}_0$. This measure $\mu$ is called ***Lebesgue measure*** on $((0,1],\mathcal{B}(0,1])$.
 
 ## Theorem 4 (Monotone-Convergence of Measure)
 
 1. If $(A_n)\in\mathcal{F}\ (n\in\mathbb{N})$ and $A_n\uparrow A$, then $\mu(A_n)\uparrow\mu(A)$. Notes, $A_n\uparrow A$ means: $A_n\subseteq A_{n+1}\ (\forall n\in\mathbb{N}), \bigcup A_n=A$.
-
 2. If $(B_n)\in\mathcal{F}\ (n\in\mathbb{N})$, $B_n\downarrow B$ and $\mu(B_k)<\infty$ for some $k$, then $\mu(B_n)\downarrow\mu(B)$.
 
 ### Example of Monotone-convergence of measure
@@ -212,6 +215,7 @@ Also, $\lim_n{A_n}$ exists, if $\lim\sup_n{A_n}=\lim\inf_n{A_n}$, and we can pro
 ## Theorem 5 (Reverse Fatou Lemma)
 
 Let $\mathbb{P}$ denotes the probability measure. We have 
+
 $$
 \mathbb{P}(\lim\sup{E_n})\geq\lim\sup\mathbb{P}(E_n)
 $$
