@@ -33,6 +33,7 @@ $X \in m\mathcal{F}, \mathbb{E}[\lvert X\rvert] < \infty, \mathcal{G} \subset \m
 
 - **Integrability**: $\mathbb{E}[\lvert Y\rvert] < \infty$.
 - **Independence**: If $X$ is independent of $G$, then:
+
   $$
   \mathbb{E}[X \mid G] = \mathbb{E}[X].
   $$
@@ -114,6 +115,7 @@ it follows that $(X_n)_{n \geq 0}$ is a martingale.
 ## Properties of Martingales
 
 **Proposition:** If $X$ is a martingale, then for all $n \geq 0$ and $k \geq 0$:
+
 $$
 \mathbb{E}[X_{n+k} \mid \mathcal{F}_n] = X_n.
 $$
@@ -127,6 +129,7 @@ $$
 ## Martingales and Convex Functions
 
 **Proposition:** If $X$ is a **martingale** and $\varphi$ is a **convex function** such that $\varphi(X_n)$ is integrable for all $n \geq 0$, then:
+
 $$
 \varphi(X_n) \text{ is a submartingale}.
 $$
@@ -270,9 +273,11 @@ Y_n = X_0 + (C \cdot X)_n.
 $$
 
 Further, since
+
 $$
 \{C_n=0\}=\{T<n\}=\{T\leq n-1\}\in m\mathcal{F}_{n-1},\quad \{C_n=1\}=\{C_n=0\}^{c}\in m\mathcal{F}_{n-1},
 $$
+
 $C_n$ is predictable, we conclude that $(Y_n)$ is a supermartingale.
 
 ## Theorem: Doob’s Optional Stopping Theorem
@@ -307,10 +312,10 @@ $$
 $$
 
 Further, 
+
 $$
 |X_{T \wedge n}|\leq \left|\sum_{i=1}^{T \wedge n} (X_i - X_{i-1})\right|+|X_0|\leq \sum_{i=1}^{T \wedge n}|X_i - X_{i-1}|+|X_0|<TK+|X_0|.
 $$
-
 
 Using the Dominated Convergence Theorem (DCT), we obtain:
 $$
@@ -352,6 +357,7 @@ $$
 ---
 
 Now, let $X$ be an **adapted integrable process**. Assume $X_0 = 0$. Then $X$ is a martingale **if and only if**:
+
 $$
 \mathbb{E}[X_T] = 0, \quad \text{for all bounded stopping times } T.
 $$
@@ -425,6 +431,7 @@ $$
 ![upcrossing.png](https://s2.loli.net/2025/02/03/IyQerm4PZxonvBG.png)
 
 If $a < b$, define the **number of upcrossings**:
+
 $$
 U_N([a, b]) = \# \text{ of upcrossings on } [0, N].
 $$
@@ -462,6 +469,7 @@ $$
 $$
 
 **Consequence:**
+
 $$
 \mathbb{P}(U_{\infty}([a, b]) < \infty) = 1 \quad \text{(a.s.)}.
 $$
@@ -492,6 +500,7 @@ $$
 where let $\Lambda_{a,b}:=\{ \omega \mid \lim\inf X_n(\omega) < a < b < \lim\sup X_n(w)\}$. Therefore, $\Lambda_{a,b}\subset \{U_N([a, b])=\infty\}$. 
 
 Hence, 
+
 $$
 \mathbb{P}(\Lambda_{a,b}) = 0\implies \mathbb{P}(\Lambda)=0.
 $$
@@ -513,9 +522,11 @@ Thus, $X_{\infty}$ is **integrable**.
 ---
 
 Another question arises: 
+
 $$
 \mathbb{E}[X_{\infty} \mid \mathcal{F}_n] = \mathbb{E}[\lim_{m \to \infty} X_m \mid \mathcal{F}_n]\leq(?) \lim_{m \to \infty} \mathbb{E}[X_m \mid \mathcal{F}_n] \leq \lim X_n.
 $$
+
 Consider the following example.
 
 ### **Example: Gambler’s Ruin Problem**
