@@ -5,7 +5,7 @@ title: Courses
 description: Materials for courses I took and taught.
 nav: true
 nav_order: 3
-display_categories: ["ST109 Elementary Statistical Theory I", "ST552 Probability and Mathematical Statistics I"]
+display_categories: ["ST109 Elementary Statistical Theory I", "ST552 Probability and Mathematical Statistics I", "ST553 Probability and Mathematical Statistics II"]
 horizontal: false
 ---
 
