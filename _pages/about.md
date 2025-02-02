@@ -9,7 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 7.02B</p>
+    <p>Room 5.02</p>
     <p>Columbia House, 69 Aldwych</p>
     <p>London WC2B 4RR</p>
     <p>United Kingdom</p>
