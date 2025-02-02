@@ -14,7 +14,7 @@ A probability space is given by $(\Omega, \mathcal{F}, \mathbb{P})$.
 
 ## Definition: Conditional Expectation
 
-$X \in m\mathcal{F}, \mathbb{E}[|X|] < \infty, \mathcal{G} \subset \mathcal{F}$. The conditional expectation $\mathbb{E}[X \mid G]$ is a random variable $Y$ such that:
+$X \in m\mathcal{F}, \mathbb{E}[\lvert X\rvert] < \infty, \mathcal{G} \subset \mathcal{F}$. The conditional expectation $\mathbb{E}[X \mid G]$ is a random variable $Y$ such that:
 
 1. $Y\in m\mathcal{G}$.
 2. For all $A \in G$,
@@ -31,9 +31,8 @@ $X \in m\mathcal{F}, \mathbb{E}[|X|] < \infty, \mathcal{G} \subset \mathcal{F}$.
   \mathbb{E}[\mathbb{E}[X \mid H] \mid G] = \mathbb{E}[X \mid G].
   $$
 
-- **Integrability**: $\mathbb{E}[|Y|] < \infty$.
+- **Integrability**: $\mathbb{E}[\lvert Y\rvert] < \infty$.
 - **Independence**: If $X$ is independent of $G$, then:
-
   $$
   \mathbb{E}[X \mid G] = \mathbb{E}[X].
   $$
@@ -46,7 +45,7 @@ $$
 X := (X_n)_{n \geq 0}, \quad X_n \in m\mathcal{F} \quad (\forall n).
 $$
 
-A **filtration** $(\mathcal{F}_n)_{n \geq 0}$ satisfies:
+A **filtration** $(\mathcal{F}\_n)_{n \geq 0}$ satisfies:
 
 $$
 \mathcal{F}_0 \subset \mathcal{F}_1 \subset \mathcal{F}_2 \subset \cdots
@@ -64,7 +63,7 @@ $$
 
 ## Definition: Martingales, Supermartingales, and Submartingales
 
-Let $X$ be an $(\mathcal{F}_n)$-**adapted **process, and $\mathbb{E}[|X_n|]<\infty$ for all $n$. Then:
+Let $X$ be an $(\mathcal{F}_n)$-**adapted **process, and $\mathbb{E}[\lvert X_n\rvert]<\infty$ for all $n$. Then:
 
 - $X$ is a **supermartingale** relative to $(\mathcal{F}_n, \mathbb{P})$ if:
 
@@ -136,7 +135,7 @@ $$
 
 ### Example: Filtration-Generated Martingale
 
-If $\mathbb{E}[|X|] < \infty$, define:
+If $\mathbb{E}[\lvert X\rvert] < \infty$, define:
 
 $$
 X_n := \mathbb{E}[X \mid \mathcal{F}_n], \quad \forall n \geq 0.
@@ -146,7 +145,7 @@ Then $(X_n)_{n \geq 0}$ is a **martingale**.
 
 ## Predictable Processes and Martingale Transforms
 
-Let $(X_n)_{n \geq 0}$ be an adapted process and let $(C_n)_{n \geq 0}$ be another adapted process.
+Let $(X_n)\_{n \geq 0}$ be an adapted process and let $(C_n)\_{n \geq 0}$ be another adapted process.
 
 Define the **martingale transform**:
 
@@ -251,7 +250,7 @@ it follows that $T$ is a stopping time.
 Let $X$ be a supermartingale and let $T$ be a stopping time. Define the stopped process:
 
 $$
-Y_n = X_{T\and n} = X_n \mathbb{1}_{\{n \leq T\}} + X_T \mathbb{1}_{\{n > T\}}.
+Y_n = X_{T\wedge n} = X_n \mathbb{1}_{\{n \leq T\}} + X_T \mathbb{1}_{\{n > T\}}.
 $$
 
 ### Theorem: Stopped Supermartingale
@@ -490,7 +489,7 @@ $$
 \end{align*}
 $$
 
-where let $\Lambda_{a,b}:=\{ \omega \mid \lim\inf X_n(\omega) < a < b < \lim\sup X_n(w)\}$. Therefore, $\Lambda_{a,b}\sub \{U_N([a, b])=\infty\}$. 
+where let $\Lambda_{a,b}:=\{ \omega \mid \lim\inf X_n(\omega) < a < b < \lim\sup X_n(w)\}$. Therefore, $\Lambda_{a,b}\subset \{U_N([a, b])=\infty\}$. 
 
 Hence, 
 $$
